@@ -1,0 +1,83 @@
+:root{
+   
+  --primary-color:  #e00229;
+  --primary-color--var:  #520311;
+  --secondary:   #c4c0cc;
+  /* --secondarybr:   ; */
+  --black: #141414;
+  --blackvar: #444141;
+  --white: #fff;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+nav .fa{
+  display: none;
+}
+
+
+@media only screen and (max-width:600px) {
+  #header{
+    background-image: url(./images/phonebg1.png);
+  }
+
+  .intro-text{
+    margin-top: 150%;
+    font-size: 16px;
+    white-space: nowrap;
+    text-align: center;
+  
+
+  }
+
+  .intro-text h1{
+    font-size: 25px;
+   
+  
+}
+
+  nav .fa{
+    display: block;
+    font-size: 25px;
+    /* color: var(--primary-color); */
+  }
+
+  nav ul{
+    background:var(--blackvar);
+    background: var(--primary-color);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    color: var(--white);
+    z-index: 2;
+    transition: right 0.5s;
+  
+  }
+
+  nav ul li{
+    display: block;
+    margin: 25px;
+
+  }
+
+  nav ul li a{
+  color: var(--white);
+
+  }
+
+  nav .fa{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  
+    }
+  
+  
+}
